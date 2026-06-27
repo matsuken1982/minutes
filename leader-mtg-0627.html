@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YSF リーダー会 まとめ（6/27）</title>
+<style>
+  :root{
+    --ink:#1f2933;--sub:#52606d;--line:#e1e5ea;--bg:#f6f7f9;
+    --card:#ffffff;--accent:#2c7a7b;--accent-soft:#e6f1f1;
+    --warn:#b45309;--warn-soft:#fdf2e2;--todo:#3b5bdb;--todo-soft:#eef1fd;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP","Segoe UI",sans-serif;
+    line-height:1.75;font-size:15px;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+  header.top{border-bottom:3px solid var(--accent);padding-bottom:18px;margin-bottom:8px}
+  header.top .eyebrow{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.08em}
+  header.top h1{margin:4px 0 6px;font-size:26px;line-height:1.3}
+  header.top .meta{color:var(--sub);font-size:13.5px}
+  .concept{
+    background:var(--accent-soft);border-radius:12px;padding:16px 20px;margin:22px 0 8px;
+  }
+  .concept .label{font-size:12px;font-weight:700;color:var(--accent);letter-spacing:.06em}
+  .concept .copy{font-size:19px;font-weight:700;margin-top:2px}
+  .concept p{margin:8px 0 0;color:var(--sub);font-size:13.5px}
+
+  h2.section{
+    font-size:14px;letter-spacing:.04em;color:var(--sub);
+    margin:38px 0 14px;padding-bottom:7px;border-bottom:1px solid var(--line);font-weight:700;
+  }
+
+  .box{border-radius:12px;padding:16px 20px;margin-bottom:16px;border:1px solid var(--line);background:var(--card)}
+  .box.decide{border-left:4px solid var(--accent)}
+  .box.todo{border-left:4px solid var(--todo)}
+  .box h3{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
+  .box.decide h3{color:var(--accent)}
+  .box.todo h3{color:var(--todo)}
+  .box ul{margin:0;padding-left:0;list-style:none}
+  .box li{position:relative;padding:7px 0 7px 26px;border-top:1px dashed var(--line)}
+  .box li:first-child{border-top:none}
+  .box.decide li::before{content:"✓";position:absolute;left:4px;top:7px;color:var(--accent);font-weight:700}
+  .box.todo li::before{content:"▸";position:absolute;left:6px;top:7px;color:var(--todo);font-weight:700}
+  .who{display:inline-block;background:var(--todo-soft);color:var(--todo);font-size:11.5px;
+    font-weight:700;border-radius:5px;padding:1px 8px;margin-left:4px}
+
+  .team{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:18px 22px;margin-bottom:14px}
+  .team h3{margin:0 0 4px;font-size:17px;display:flex;align-items:center;gap:10px}
+  .team h3 .dot{width:10px;height:10px;border-radius:50%;flex:none}
+  .team .lead{color:var(--sub);font-size:13px;margin:0 0 12px}
+  .team p{margin:0 0 10px}
+  .team .row{margin:9px 0}
+  .tag{display:inline-block;font-size:11.5px;font-weight:700;border-radius:5px;
+    padding:1px 9px;margin-right:6px;vertical-align:1px}
+  .tag.k{background:var(--accent-soft);color:var(--accent)}
+  .tag.c{background:#eef2f7;color:#475569}
+  .tag.w{background:var(--warn-soft);color:var(--warn)}
+  .team ul{margin:6px 0 0;padding-left:20px}
+  .team ul li{margin:4px 0}
+
+  footer{margin-top:40px;color:var(--sub);font-size:12.5px;text-align:center;
+    border-top:1px solid var(--line);padding-top:18px}
+  @media print{
+    body{background:#fff}
+    .team,.box{break-inside:avoid;box-shadow:none}
+    .wrap{padding-top:10px}
+  }
+  @media(max-width:560px){
+    header.top h1{font-size:22px}
+    .wrap{padding:22px 14px 60px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">YSF019 用賀サマーフェスティバル / リーダーMTG 議事まとめ</div>
+    <h1>リーダー会 まとめ</h1>
+    <div class="meta">2026年6月27日（金）開催・約1時間15分 ／ 進行：唯さん ／ 欠席：たすく・あさこ（学校行事）ほか</div>
+  </header>
+
+  <div class="concept">
+    <div class="label">この日の通底テーマ</div>
+    <div class="copy">サステナブルに・顔の見えるYSFを ― 金額より「人数（母数）」と「交わり」</div>
+    <p>予算は「足りないから集める」ではなく、一人から多く取らず小口で母数を増やす方針に。各チームは早めに作って共有し、フットワーク軽く進める ―― という運営スタンスが繰り返し確認されました。</p>
+  </div>
+
+  <p style="color:var(--sub);font-size:13.5px;margin:14px 2px 0">
+    今回は進捗報告を省き、相談事項への回答・予算合意・行動指針が中心でした。欠席・多忙な方は、まず下の「決定事項」と「要対応TODO」を押さえればOKです。
+  </p>
+
+  <!-- ===== SUMMARY ===== -->
+  <h2 class="section">まず押さえる：全体の決定事項</h2>
+
+  <div class="box decide">
+    <h3>会議で決まったこと</h3>
+    <ul>
+      <li><b>予算</b>：必須予算は工夫後でも約460万。目安として450万で置くが、<b>目標「金額」は対外的に掲げない</b>。一人10万のような集め方はやめ、<b>一人5,000円〜の小口で「人数（母数）」を増やす</b>方針に合意。集まらなければそれが実力値＝サステナブル重視。</li>
+      <li><b>営業の最優先</b>：6月中（最悪7/3）に営業開始するため、<b>簡易Webが最優先</b>。それを基に営業チラシは<b>営業の裁量（AI・学生活用）で完結</b>して作ってよい、とクリエイティブ・広報も合意。</li>
+      <li><b>広報×クリエイティブを密に</b>：去年より両チームの距離があるため、意図して合同で時間を取る（今日の重要な決め事）。</li>
+      <li><b>進め方の原則</b>：各チーム先に作って進める。途中でも早めに全体へ出し「意見あればちょうだい」方式。セクショナリズムを避けフットワーク軽く。</li>
+      <li><b>ステージ</b>：ビール箱案は断念。安全性・実績優先でレオンさんに依頼、一括（約80万）か音響分離かを<b>6/28（日）までに最終判断</b>。</li>
+      <li><b>キッズ</b>：昔遊びは無料でOK（導線設計をしっかり）。射的の景品に<b>商店街限定で協賛店の商品券・寄り道チケット</b>を出す案を採用。単価は安易に下げない。</li>
+      <li><b>Tシャツ</b>：袖デザインは断念し表面のみ（ロゴは前面に入る）。</li>
+      <li><b>行動指針</b>：細かい文面は配らず、全体会（7/17）で口頭共有。「一人の軽い行動が大きなインパクト＝見られている」を自覚してもらうのが主眼。</li>
+      <li><b>全体LINE</b>：投稿は朝7時〜夜22時を目安に。緊急以外のメンバー投稿はカットし、緊急連絡はリーダーから。</li>
+    </ul>
+  </div>
+
+  <div class="box todo">
+    <h3>要対応TODO（担当）</h3>
+    <ul>
+      <li>簡易Webを6月中（なる早）に用意 → 営業開始の最優先 <span class="who">クリエイティブ／たけちゃん</span></li>
+      <li>ティザー内容の取りまとめ・去年ベースで広報物のドラフト作成 <span class="who">広報</span></li>
+      <li>去年情報（営業実績）の連携 <span class="who">営業（渡部）</span></li>
+      <li>各チームの作成物テンプレ（ポップ／メニュー枠等）とトンマナを用意、期日を明確化 <span class="who">クリエイティブ</span></li>
+      <li>ステージ発注方式を6/28までに判断 <span class="who">エンタメ（澄川）</span></li>
+      <li>射的景品の協賛（商店街限定）・偏り/数の相談 <span class="who">営業×佐藤</span></li>
+      <li>環境ポリシーを明文化し7/3までに共有（出店者向け） <span class="who">環境（ちえ）</span></li>
+      <li>広報物に環境配慮の文言を反映 <span class="who">広報</span></li>
+      <li>外部出店の個別プッシュ（用賀在住で未応募の先） <span class="who">各リーダー</span></li>
+      <li>7/7 商店街理事会の挨拶メンバー選定 <span class="who">営業・広報／窓口たけちゃん</span></li>
+      <li>保護者同意フォーム未回答のプッシュ <span class="who">未成年がいるチームのリーダー</span></li>
+      <li>世田谷区後援の原稿（7/15目安） <span class="who">広報</span></li>
+    </ul>
+  </div>
+
+  <!-- ===== 予算 ===== -->
+  <h2 class="section">議題1：予算について合意</h2>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#b45309"></span>予算の全体像と方針</h3>
+    <p>必須予算は工夫後でも約460万円（途中、遊びレンタル費の桁ミスを修正）。収入は寄付金400万＋売上見込み（フード160万・BAR83万・キッズ80万＝売上合計約323万）＋外部出店のレンタル実費（仮5万）。寄付金のみだと赤字、売上込みなら黒字だが、寄付金はネオ村の年間活動原資のため安易に削らない。</p>
+    <div class="row"><span class="tag k">合意</span>「460必要だから460集める」ではなく、トントンに合わせにいかない。目安450万で置きつつ、対外メッセージは金額でなく<b>人数</b>で打つ。一人から多く（10万等）もらうのはやめ、小口×母数でサステナブルに。集まらなければそれが実力値。</div>
+    <div class="row"><span class="tag c">営業（渡部）</span>去年は530万・半分が個人。スタッフ220人中100人が各20人に5,000円ずつ声かけすれば十分届く。450で必要母数を再計算して全体共有。寄付者との年間リレーション構築も全員で。</div>
+    <div class="row"><span class="tag c">個別調整</span>MC（しょっぴー・2日4万）／全体懇親予算は学生のみ補助で18万→10万に圧縮／大人懇親は実費／撮影台はレオナルド君に依頼で削減検討。レンタカー（軽トラ）・感謝祭（寄付者へのお礼）・警備は削らない。スーパーボール等の使い回し備品もYSF単体収支で計上。</div>
+  </div>
+
+  <!-- ===== TEAMS ===== -->
+  <h2 class="section">議題2：各チームの相談事項</h2>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#9b5de5"></span>CR / クリエイティブ <span style="font-size:12px;color:var(--sub);font-weight:400">（不在・相談事項に回答）</span></h3>
+    <p>ティザー内容は広報で取りまとめ、去年情報を営業から連携。駅前ポスター（3枚）は1枚目ティザー＋2-3枚目構成案を広報が検討。「どれがポスター/チラシ/ティザーか分からない」問題は去年データを朝子さんに確認して共有。</p>
+    <div class="row"><span class="tag k">重要決定</span>去年より広報とクリエイティブの距離があるため、意図して密に時間を取る（去年はたすく・あさこが日常会話で連携できていた）。</div>
+    <div class="row"><span class="tag c">役割</span>ドラフトはクリエイティブが作り、メッセージは全体のものとして広報が去年ベースで先に出す。営業はインプットせずとも回る体制に。Webは最優先、担当を決める。</div>
+    <div class="row"><span class="tag c">作成物</span>フードメニュー・ポップ・ゴミステーション看板等は、クリエイティブがトンマナ／フレーム（テンプレ）を用意し各チームが自作。要否と期日を明確化してクリエイティブから発信。</div>
+  </div>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#3b5bdb"></span>営業</h3>
+    <p>まだ営業活動前。役割分担・学生サブリーダーは決定済み。翌日MTGで具体作業に着手。</p>
+    <div class="row"><span class="tag k">最優先</span>6月中（最悪7/3）に店回りを始めたいので簡易Webが最優先。チラシは営業裁量（AI・学生）で作ってよい（最終チェックのみ広報/クリエイティブ）。</div>
+    <div class="row"><span class="tag c">リストバンド</span>効果に疑問の声もあるが「交わるきっかけ」として今年も継続。発注は営業（去年ルート＝パーシモン等を確認）、デザインは去年ベース＋今年ロゴ。</div>
+    <div class="row"><span class="tag c">外向け一覧</span>Web/ノート/インスタ等のリンクを広報が全体チャンネルにキャンバスでまとめ、トップページURLを掲示。</div>
+  </div>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#577590"></span>キッズ（佐藤さん）</h3>
+    <p>チーム分け確定。相談事項は2点。</p>
+    <div class="row"><span class="tag k">①無料遊び</span>昔遊び（けん玉・ベーゴマ・お手玉・ピンボール等）を無料に。射的・スーパーボール・駄菓子は有料。<b>無料化はOK、ただし導線設計をしっかり</b>（射的前は行列するので場所を検討）。</div>
+    <div class="row"><span class="tag k">②景品連携</span>射的の景品に協賛店の商品券・寄り道チケットを出す案を採用。<b>商店街限定にすると加盟メリットになり商店街が喜ぶ</b>。営業×佐藤で偏り・数を相談。最上位景品は寄り道チケット（ワンセット制）や大きなぬいぐるみも検討。実行委員のTikTok人材を募るのもあり。</div>
+    <div class="row"><span class="tag w">単価</span>児童館・小学校から「射的500円は高い」声。安くする案もあるが、サステナブル観点で<b>安易に下げない</b>（500円でも行列している）。商品と価格のバランスで再検討。</div>
+  </div>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#e76f51"></span>エンタメ（澄川さん）</h3>
+    <p>ステージ公募は6/18発信で23団体回答、6/28締切で順調。</p>
+    <div class="row"><span class="tag k">ステージ</span>ビール箱案はレンタル不可・検討不足で断念。安全性・実績優先でレオンさんに依頼し、①一括（約80万）か②音響を用賀のアルトフォニックスタジオに分けるかを<b>6/28（日）までに最終判断</b>。MCはしょっぴー（2日4万）。</div>
+  </div>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#f9c74f"></span>フード（なおさん）</h3>
+    <p>メニュー決定：焼きそば・ワイワイ焼き・フランクフルト・焼き鳥（畑のソース）・かき氷・ベビーカステラ。試食会準備中、容器選定中。</p>
+    <div class="row"><span class="tag w">お願い</span>試食会当日にプロジェクター設置を手伝える人を別途募集（11時頃来られる人／大人が少ない）。</div>
+  </div>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#43aa8b"></span>環境（ちえさん）</h3>
+    <p>エコプラザ用賀は参加困難の返事。つながりは継続。</p>
+    <div class="row"><span class="tag c">プラカップ</span>ゴミのかさ削減のため、外部出店にもサイズ統一を協力依頼（強制は難しい）。</div>
+    <div class="row"><span class="tag k">広報連携</span>チラシ・SNS等の広報物に環境配慮（ゴミ分別協力・来場者への協力依頼）を反映。環境ポリシーを明文化し<b>7/3（出店者締切）まで</b>に先に共有。</div>
+  </div>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#e63946"></span>BAR（やじさん）</h3>
+    <p>仮確定メニュー（アルコール・ソフトドリンク多数）。ブレンドメニューは模索中。</p>
+    <div class="row"><span class="tag k">おつまみ</span>100円の柿の種小袋程度をついで売り → 賛成、やる方向。</div>
+    <div class="row"><span class="tag c">試食会</span>7/4の試食会で仮確定メニューを試飲してもらう。</div>
+  </div>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#2a9d8f"></span>ブレンド（松井さん）</h3>
+    <p>出店応募フォームは32件（例年の倍以上）。もうひと伸びしたい。</p>
+    <div class="row"><span class="tag c">お願い</span>用賀在住で未応募の先は各リーダーが個別プッシュ。インスタからも送付済み。</div>
+    <div class="row"><span class="tag k">理事会挨拶</span>7/7（火）19時に商店街理事会でYSF（neomura）が挨拶（冒頭）。営業・広報から数名参加、窓口たけちゃんがメンバーを決めて松井に共有。「YSF/ネオ村の顔をもっと見えるように」。</div>
+  </div>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#2c7a7b"></span>支える（唯さん）</h3>
+    <p>特段の相談事項はなし。保護者同意フォームの未回答が多いため、未成年がいるチームのリーダーはプッシュをお願いしたい。</p>
+  </div>
+
+  <!-- ===== ディスカッション・行動指針 ===== -->
+  <h2 class="section">議題3・4：まとめディスカッション／行動指針</h2>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#577590"></span>共有事項（Ryoより／たすく欠席）</h3>
+    <div class="row"><span class="tag c">レンタル品実費請求</span>とりまとめの手間賃をいただきたい。商店街は実費、その他は原価×1.1、または全店一律 原価×1.1（要確認）。</div>
+    <div class="row"><span class="tag c">各種フォーム</span>認定NPO取得に向け、行政提出用の寄付者名簿（3,000円以上・100名以上）が必須。未成年同意フォームは今回は免責がメイン、来年は子どもを守る指針を明文化したい。</div>
+  </div>
+
+  <div class="team">
+    <h3><span class="dot" style="background:#b45309"></span>行動指針</h3>
+    <p>動画アップの件・飲酒運転の件を踏まえDo/Don't/お願いの指針案を作成。ただし「何をするな」を細かく定めるより、<b>一人の軽い行動が大きなインパクトを起こす＝見られている、というリスク自覚</b>を促すことが主眼（渡部・ちえ）。</p>
+    <div class="row"><span class="tag k">結論</span>細かい文面は配らず、全体会（7/17）で口頭共有する。全体LINEの投稿は朝7時〜夜22時を目安に。緊急以外のメンバー投稿はカットし、緊急連絡はリーダーから送る。</div>
+  </div>
+
+  <footer>
+    YSF019 用賀サマーフェスティバル リーダーMTG 議事まとめ（2026/6/27）<br>
+    ※ 欠席・多忙だった方は冒頭の「決定事項」「要対応TODO」をご確認ください。
+  </footer>
+
+</div>
+</body>
+</html>
